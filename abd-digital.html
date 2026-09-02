@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABD Digital | Websites. Growth. Results.</title>
+<meta name="description" content="ABD Digital helps businesses grow with website design, development, SEO, and video editing.">
+<style>
+:root{--blue:#2476ff;--dark:#07111f;--dark2:#0d1b2e;--text:#172033;--muted:#657086;--light:#f5f8fc;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:var(--white)}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.btn{display:inline-block;padding:14px 24px;border-radius:8px;font-weight:700;transition:.2s}
+.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn-outline{border:1px solid #aab4c4;color:#fff;margin-left:10px}
+header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:25px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--blue)}
+nav{display:flex;gap:24px;font-size:14px;font-weight:700}
+nav a:hover{color:#72a7ff}
+.menu{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{background:linear-gradient(120deg,#07111f 0%,#0b1b32 55%,#07111f 100%);color:#fff;padding:92px 0 75px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
+.eyebrow{color:#78aaff;font-weight:800;font-size:13px;letter-spacing:1px;margin-bottom:15px}
+h1{font-size:clamp(42px,6vw,70px);line-height:1.02;margin-bottom:22px;letter-spacing:-2px}
+h1 span{color:var(--blue)}
+.hero p{max-width:570px;color:#c6d0df;font-size:18px;margin-bottom:28px}
+.hero-card{background:linear-gradient(145deg,#132844,#081321);border:1px solid rgba(120,170,255,.3);border-radius:18px;padding:18px;box-shadow:0 25px 60px rgba(0,0,0,.35)}
+.screen{background:#fff;border-radius:11px;overflow:hidden;color:#172033;min-height:300px}
+.screen-top{height:34px;background:#edf2f8;padding:10px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#a7b2c3;margin-right:5px}
+.screen-body{padding:35px;background:linear-gradient(135deg,#f7faff,#dbe9ff);height:300px}.mini-title{font-size:32px;font-weight:900;line-height:1.05;margin-bottom:18px}.mini-title span{color:var(--blue)}
+.stats{display:flex;gap:25px;margin-top:38px}.stat{border-left:1px solid rgba(255,255,255,.25);padding-left:20px}.stat:first-child{border:0;padding-left:0}.stat strong{display:block;font-size:25px}.stat small{color:#aebbd0}
+section{padding:82px 0}.section-head{text-align:center;margin-bottom:42px}.section-head .eyebrow{margin-bottom:6px}.section-head h2{font-size:38px;line-height:1.1}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{padding:28px;border:1px solid #e4e9f1;border-radius:14px;background:#fff;box-shadow:0 8px 25px rgba(20,35,60,.05)}
+.icon{width:48px;height:48px;border-radius:11px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-size:23px;margin-bottom:18px}.card h3{margin-bottom:10px;font-size:19px}.card p{color:var(--muted);font-size:14px}.learn{display:inline-block;margin-top:20px;color:var(--blue);font-size:13px;font-weight:800}
+.why{background:var(--dark);color:#fff}.why-grid{display:grid;grid-template-columns:1.2fr 2fr;gap:45px;align-items:center}.why p{color:#b8c5d6;margin:16px 0 25px}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{padding:10px 16px;border-left:1px solid rgba(255,255,255,.2)}.feature h4{margin-bottom:8px}.feature p{font-size:13px;margin:0}
+.projects{background:#f8faff}.project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.project{background:#fff;border-radius:13px;overflow:hidden;border:1px solid #e4e9f1}.project-img{height:155px;padding:22px;color:#fff;font-weight:800;display:flex;align-items:end;font-size:22px}.p1{background:linear-gradient(135deg,#101c2d,#1d72d8)}.p2{background:linear-gradient(135deg,#8d5d46,#edc9ae)}.p3{background:linear-gradient(135deg,#11162c,#304a91)}.p4{background:linear-gradient(135deg,#1f574e,#88bba0)}.project-info{padding:17px}.project-info small{color:var(--muted)}
+.cta{background:linear-gradient(110deg,#07111f,#164da9);color:#fff;border-radius:18px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:34px;line-height:1.1;margin-bottom:8px}.cta p{color:#cad6e8}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}.contact-box{background:#f6f9fd;padding:32px;border-radius:14px}.contact-box h2{font-size:36px;margin-bottom:12px}.contact-box p{color:var(--muted);margin-bottom:20px}.contact-list{list-style:none}.contact-list li{margin:12px 0;font-weight:600}
+form{display:grid;gap:15px}input,textarea{width:100%;padding:15px;border:1px solid #dce3ed;border-radius:8px;font:inherit}textarea{min-height:130px;resize:vertical}
+footer{background:#07111f;color:#d0d8e5;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px}.footer-grid h4{color:#fff;margin-bottom:14px}.footer-grid a{display:block;margin:8px 0;font-size:14px}.footer-grid p{font-size:14px}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:22px;font-size:13px}
+@media(max-width:850px){nav{display:none}.menu{display:block}.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}.grid4,.project-grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.hero{padding:70px 0 55px}.stats{gap:12px}.stat{padding-left:12px}.grid4,.project-grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}.cta{padding:30px;display:block}.cta .btn{margin-top:20px}.btn-outline{display:none}.footer-grid{grid-template-columns:1fr}section{padding:65px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">ABD <span>DIGITAL</span></a>
+    <nav><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#portfolio">PORTFOLIO</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+    <a class="btn btn-primary" href="#contact">GET STARTED</a>
+    <button class="menu" onclick="document.querySelector('nav').style.display='flex'">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">— ABD DIGITAL</div>
+<h1>We Help Businesses <span>Grow</span> Online</h1>
+<p>We build modern websites, improve search visibility, and create powerful content that helps businesses attract more customers.</p>
+<a class="btn btn-primary" href="#contact">GET STARTED →</a><a class="btn btn-outline" href="#portfolio">VIEW OUR WORK</a>
+<div class="stats"><div class="stat"><strong>50+</strong><small>Happy Clients</small></div><div class="stat"><strong>120+</strong><small>Projects Completed</small></div><div class="stat"><strong>5+</strong><small>Years Experience</small></div></div>
+</div>
+<div class="hero-card"><div class="screen"><div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="screen-body"><div class="eyebrow">DIGITAL SOLUTIONS</div><div class="mini-title">Websites That <span>Drive Results</span></div><p style="color:#657086;font-size:14px">Creative strategy and digital solutions built for modern businesses.</p><br><a class="btn btn-primary" href="#services">EXPLORE SERVICES</a></div></div></div>
+</div>
+</section>
+
+<section id="services">
+<div class="container"><div class="section-head"><div class="eyebrow">OUR SERVICES</div><h2>Digital Solutions That Drive Results</h2></div>
+<div class="grid4">
+<div class="card"><div class="icon">✎</div><h3>Website Design</h3><p>Beautiful, modern and responsive designs that represent your brand and engage your audience.</p><a class="learn" href="#contact">LEARN MORE →</a></div>
+<div class="card"><div class="icon">&lt;/&gt;</div><h3>Website Development</h3><p>Fast, secure and scalable websites built with clean code and modern technologies.</p><a class="learn" href="#contact">LEARN MORE →</a></div>
+<div class="card"><div class="icon">↗</div><h3>SEO</h3><p>Improve your online visibility and attract more relevant visitors with smart SEO strategies.</p><a class="learn" href="#contact">LEARN MORE →</a></div>
+<div class="card"><div class="icon">▶</div><h3>Video Editing</h3><p>Professional video content designed for social media, brands and digital marketing.</p><a class="learn" href="#contact">LEARN MORE →</a></div>
+</div></div>
+</section>
+
+<section class="why" id="about"><div class="container why-grid">
+<div><div class="eyebrow">WHY CHOOSE US</div><h2 style="font-size:38px;line-height:1.1">We're More Than Just A Digital Agency</h2><p>We focus on practical digital solutions that help businesses look professional, reach more people and grow online.</p><a class="btn btn-primary" href="#contact">ABOUT US →</a></div>
+<div class="features"><div class="feature"><h4>◎ Quality Work</h4><p>High standards on every project.</p></div><div class="feature"><h4>♙ Client Focused</h4><p>Solutions built around your needs.</p></div><div class="feature"><h4>◷ On-Time Delivery</h4><p>Clear communication and deadlines.</p></div><div class="feature"><h4>◉ Support</h4><p>We're here when you need help.</p></div></div>
+</div></section>
+
+<section class="projects" id="portfolio"><div class="container"><div class="section-head"><div class="eyebrow">OUR WORK</div><h2>Featured Projects</h2></div>
+<div class="project-grid">
+<div class="project"><div class="project-img p1">Fitness Website</div><div class="project-info"><strong>Fitness Website</strong><br><small>Web Design & Development</small></div></div>
+<div class="project"><div class="project-img p2">E-Commerce Store</div><div class="project-info"><strong>E-Commerce Store</strong><br><small>Web Design & Development</small></div></div>
+<div class="project"><div class="project-img p3">Corporate Website</div><div class="project-info"><strong>Corporate Website</strong><br><small>Web Design & Development</small></div></div>
+<div class="project"><div class="project-img p4">Travel Website</div><div class="project-info"><strong>Travel Website</strong><br><small>Web Design & Development</small></div></div>
+</div></div>
+</section>
+
+<section><div class="container"><div class="cta"><div><h2>Ready to Take Your Business<br>to the Next Level?</h2><p>Let's work together to grow your brand and achieve real results.</p></div><a class="btn btn-primary" href="#contact">START YOUR PROJECT →</a></div></div></section>
+
+<section id="contact"><div class="container contact-grid"><div class="contact-box"><div class="eyebrow">CONTACT ABD DIGITAL</div><h2>Let's Build Something Great</h2><p>Tell us about your project and we'll get back to you.</p><ul class="contact-list"><li>📧 hello@abddigital.com</li><li>📍 Lagos, Nigeria</li><li>💬 WhatsApp: Add your number here</li></ul></div>
+<div><form onsubmit="sendMessage(event)"><input id="name" placeholder="Your Name" required><input id="email" type="email" placeholder="Your Email" required><textarea id="message" placeholder="Tell us about your project" required></textarea><button class="btn btn-primary" type="submit">SEND MESSAGE →</button></form><p id="formStatus" style="margin-top:12px;color:#2476ff;font-weight:bold"></p></div></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div><div class="logo">ABD <span>DIGITAL</span></div><p style="margin-top:12px">Websites. Growth. Results.</p></div><div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a></div><div><h4>Services</h4><a href="#services">Website Design</a><a href="#services">Development</a><a href="#services">SEO</a><a href="#services">Video Editing</a></div><div><h4>Newsletter</h4><p>Subscribe for updates and digital tips.</p><br><input placeholder="Enter your email"></div></div><div class="container copyright">© 2026 ABD Digital. All Rights Reserved.</div></footer>
+
+<script>
+function sendMessage(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value;
+ const email=document.getElementById('email').value;
+ const message=document.getElementById('message').value;
+ const subject=encodeURIComponent('New Website Inquiry from '+name);
+ const body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\nProject details:\n'+message);
+ document.getElementById('formStatus').textContent='Opening your email app...';
+ window.location.href='mailto:hello@abddigital.com?subject='+subject+'&body='+body;
+}
+</script>
+</body>
+</html>
